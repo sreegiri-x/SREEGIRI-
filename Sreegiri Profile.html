@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sreegiri</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <img src="profile.jpeg" alt="Profile Image" class="profile-image">
+        <h1 class="logo">Sreegiri Gireesh Kumar Pillai</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Cybersecurity Enthusiast</h2>
+        <p>Exploring digital security and ethical hacking.</p>
+        <a href="#contact" class="cta-button">Let's Connect</a>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="profile.jpeg" alt="Profile Image" class="about-image">
+        <p>Passionate about cybersecurity, ethical hacking, and problem-solving. Currently pursuing BTech + MTech at NIT Patna.</p>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project">
+            <h3>Pacman Game</h3>
+            <p>A prototype of the Pacman game demonstrating problem-solving skills.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script>
+        window.addEventListener('scroll', function() {
+            var aboutImage = document.querySelector('.about-image');
+            var aboutSection = document.querySelector('.about');
+            var sectionPosition = aboutSection.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.5;
+    
+            if (sectionPosition < screenPosition) {
+                aboutImage.classList.add('show');
+            }
+        });
+    </script>
+    
+</body>
+</html>
