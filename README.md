@@ -1,2 +1,0 @@
-# SREEGIRI-
-The Profile
